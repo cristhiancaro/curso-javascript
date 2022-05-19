@@ -9,5 +9,5 @@ if (dineroHija > 0) {
 } else {
     permisoMamá = false
 }
- 
+
 console.log(permisoMamá)
