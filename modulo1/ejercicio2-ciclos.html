@@ -32,6 +32,7 @@
       console.log (`El numero mayor es el ${numero2}`)
     }
     }
+    
 /**
  * Imprimir numeros en un rango
  * Pedir al usuario dos numeros, luego imprimir los numeros entre esos dos numeros
@@ -44,16 +45,56 @@
     } else {
       numero1 = parseInt(numero1)
       numero2 = parseInt(numero2)
-      
-      for (var contador = numero1;contador <= numero2; contador++) {
+
+     /* for (var contador = numero1;contador <= numero2; contador++) {
           alert(contador)
-      }
+      } 
+      */
+     var contador = numero1
+     while (contador <= numero2) {
+       console.log(contador)
+       contador++
+     }
     }
    
 /**
  * Ejercicio calculadora
  * Pedir dos numeros al usuario y mostrar el resultado de multiplicarlos, dividirlos, sumarlos y restarlos
-*/
+*/ 
+     var numero1 = prompt('dame el primer numero')
+     var numero2 = prompt('dame el segundo numero')
+
+    if (isNaN(numero1) || isNaN(numero2)){
+      alert('solo se acetan numeros')
+    } else if (numero1 * numero2) {
+      numero1 = parseInt(numero1)
+      numero2 = parseInt(numero2)
+ 
+      alert(`el total multiplicado es ${numero1 * numero2}`)
+      alert(`el total dividido es ${numero1 / numero2}`)
+      alert(`el total sumado es ${numero1 + numero2}`)
+      alert(`el total restado es ${numero1 - numero2}`)
+    }
+
+ /**
+  * Busqueda de un numero
+  * Crear un array de 10 numeros [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] luego pedir al usuario un numero
+  * y mostrar si esta en el array
+  */
+    const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    var numero1 = prompt('dame el primer numero')
+    // tranformar el texto en un numero
+     numero1 = parseInt(numero1)
+     
+     var contador = 0
+     var tamañoLista = lista.length
+     while (contador <= tamañoLista - 1) {
+        var elementoActual = lista[contador]
+        console.log(elementoActual)
+     }
+
+
+
 
     </script>
 
