@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funciones</h1>
+    <script>
+      const primerNumero = 15
+      const segundoNumero = 10
+
+      function sumar(numero1. numero2) {
+          const suma = numero1 + numero2
+          return suma
+      }
+
+      const sumar1= (numero1, numero2) => {
+          const suma = numero1 + numero2
+          return suma
+      }
+   
+      // var sumatoria = sumar1(primerNumero, segundoNumero)
+      const saludar = () => {
+          alert('hola')
+      }
+   </script>
+
+   <button type="button" onclick="saludar()"> saludar </button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const pedirNumeros = () => {
+        numero1 = parseInt(prompt('Dame el primer numero'))
+        numero2 = parseInt(prompt('Dame el segundo numero'))
+    }
+
+    const suma = () => {
+        const resultadoSuma = numero1 + numero2
+        alert(`La suma es ${resultadoSuma}`)
+    }
+    const resta = () => {
+        const resultadoResta = numero1 - numero2
+        alert(`La resta es ${resultadoResta}`)
+    }
+    const multiplicacion = () => {
+        const resultadoMultiplicacion = numero1 * numero2
+        alert(`La multiplicacion es ${resultadoMultiplicacion}`)
+    }
+    const division = () => {
+        const resultadoDivision = numero1 / numero2
+        alert(`La division es ${resultadoDivision}`)
+    }
+    </script>
+
+    <button type="button" onclick="pedirNumeros()"> pedri Numeros </button>
+    <button type="button" onclick="suma()"> suma </button>
+    <button type="button" onclick="resta()"> resta </button>
+    <button type="button" onclick="multiplicacion()"> multiplicacion </button>
+    <button type="button" onclick="division()"> division </button>
+</body>
+</html>
