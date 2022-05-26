@@ -82,15 +82,21 @@
   * y mostrar si esta en el array
   */
     const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    var numero1 = prompt('dame el primer numero')
+    var numeroABuscar = prompt('que numero quieres buscar')
     // tranformar el texto en un numero
-     numero1 = parseInt(numero1)
+     numeroABuscar = parseInt(numeroABuscar)
      
      var contador = 0
      var tamañoLista = lista.length
      while (contador <= tamañoLista - 1) {
+       // Saco el elemento del array para comparar
         var elementoActual = lista[contador]
-        console.log(elementoActual)
+       // Pregunto si el elemento que saque es el elemento que el ususario esta buscando
+        if (numeroABuscar === elementoActual) {
+          alert(' Encontre el numero')
+        }
+        //modificar el contador
+        contador++
      }
 
 
