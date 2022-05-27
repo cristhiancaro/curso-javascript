@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      var nombre
+      var apellido
+
+      const pedirDatos  =  (tipo) => {
+        /// Codigo de pedir nombre
+        if (tipo === "nombre")  {
+          nombre = prompt('Dame tu nombre')
+        } else if (tipo === "apellido") {
+          apellido = prompt('Dame tu apellido')
+        }
+        /// Codigo de pedir apellido
+      }
+
+      cont saludar = () => {
+        alert(`Hola ${nombre} ${apellido}`)
+      }
+    </script>
+ <button  type="button" onclick ="pedirDatos('nombre')">Pedir Nombre</button>
+ <button  type="button" onclick ="pedirDatos('apellido')">Pedir Apellido</button>
+ <button  type="button" onclick ="saludar()">saludar</button>
+</body>
+</html>
